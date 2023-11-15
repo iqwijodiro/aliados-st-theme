@@ -1,0 +1,11 @@
+@use '../base/variables' as var;
+
+
+.banner {
+    height: 40rem;
+    background-color: var.$purple-darken;
+    h3 {
+        color: #fff;
+        font-size: 3.2rem;
+    }
+}

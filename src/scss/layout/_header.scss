@@ -1,0 +1,28 @@
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    color: #fff;
+    .top-navbar {
+        height: 5rem;
+        background-color: rgba($color: #d9d9d9, $alpha: 0.40);
+    }
+    .main-navbar {
+        font-weight: 600;
+        background-color: rgba($color: #d9d9d9, $alpha: 0.20);
+        nav {
+            height: 7rem;
+            ul {
+                li {
+                    margin-right: 3.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+}

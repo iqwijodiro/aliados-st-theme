@@ -1,0 +1,33 @@
+@use '../base/variables' as var;
+
+.features {
+    height: 56rem;
+    background-color: var.$purple-darken;
+
+    .grid {
+        width: min(90%, 70rem);
+        gap: 5rem;
+        .card.custom-card {
+            width: 20rem;
+            height: 16rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var.$purple-lighten;
+            padding: 1rem;
+            .card-icon {
+                i {
+                    color: inherit;
+                    font-size: 3.2rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .card-title {
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

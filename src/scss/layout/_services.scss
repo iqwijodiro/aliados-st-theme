@@ -1,0 +1,57 @@
+@use '../base/variables' as var;
+
+.services {
+    height: 105rem;
+    background: rgb(33,1,59);
+    background: linear-gradient(180deg, rgba(33,1,59,1) 0%, rgba(33,1,59,0.9) 33%, rgba(33,1,59,0.55) 67%, rgba(33,1,59,0) 100%);
+    .bg-card {
+        height: 95rem;
+        background-color: #fff;
+        box-shadow: 5px 10px 7px 3px rgba(0,0,0,0.25);
+        border-radius: 1.6rem;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 35px;
+        grid-auto-flow: row;
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .card-img {
+                position: relative;
+                width: min(90%, 30rem);
+                img {
+                    height: 240px;
+                    object-fit: cover;
+                }
+            }
+            .card-body {
+                background-color: #fff;
+                width: min(90%, 27rem);
+                z-index: 20;
+                margin-top: -65px;
+                box-shadow: 5px 7px 10px 5px rgba(169, 169, 169, 0.30);
+                .subtitle {
+                    color: rgba(16, 89, 65, 0.40);
+                    font-size: 1rem;
+                }
+                .card-title {
+                    font-size: 1.6rem;
+                    color: var.$purple-lighten;
+                }
+                .card-text {
+                    font-size: 1.2rem;
+                    color: var.$gray-light;
+                }
+            }
+            img, .card-body {
+                border-radius: .8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@use 'variables' as var;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var.$main-font;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, .nav-link {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: var.$purple-lighten;
+    }
+}
+
+main {
+   margin-top: -35px;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var.$purple-lighten;
+}
+.myBtn {
+    height: 5rem;
+    padding: 1.2rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.primary{
+    color: var.$purple-lighten;
+    background-color: #fff;
+    &:hover {
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+    }
+}
+.secondary{
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    &:hover {
+        color: var.$purple-lighten;
+        background-color: #fff;
+    }
+}
+
+
+.py-gap{
+    padding: 5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.marked {
+    border: 2px solid red;
+}

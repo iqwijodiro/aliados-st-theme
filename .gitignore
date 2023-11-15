@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+jspm_packages/
+
+/src/bootstrap/
+
+/src/img/
+
+LICENSE
+
+package-lock.json

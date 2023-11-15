@@ -1,0 +1,73 @@
+@use '../base/variables' as var;
+
+
+.main-content {
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-bg {
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(66, 16, 89, 0.9) 0%, rgba(33, 1, 59, 0.9) 100%); 
+        }
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        img, picture {
+            height: 100vh;
+            aspect-ratio: 16;
+            min-width: 100%;
+        }
+    }
+    
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: min(90%, 110rem);
+        height: 100vh;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: auto;
+        right: auto;
+        .hero-image-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .ring-bg, 
+            .member-bg {
+                flex: 1;
+                img {
+                    width: min(100%, 60rem);
+                }
+            }
+        }
+    }
+    .hero-content {
+        position: absolute;
+        z-index: 11;
+        color: #fff;
+        width: min(90%, 50rem);
+        left: 10%;
+        .page-title {
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+        }
+    }
+}
+
