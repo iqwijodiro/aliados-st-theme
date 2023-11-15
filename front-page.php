@@ -309,13 +309,123 @@ get_header();
         </div>
     </section>
 
-    <section class="blog">
-        <div class="container">
-            <div class="row latest">
+    <section class="blog py-gap">
+        <div class="section-header text-center mb-5">
+            <h3 class="text">
+                Te puede interesar los siguientes
+            </h3>
+            <h2>Artículos</h2>
+        </div>
+        <div class="container my-5">
+            <!-- <div class="row"> -->
+            <div class="latest">
                 <div class="blog-card">
                     <div class="blog-card-img">
-                        
+                        <picture>
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/steps.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/steps.jpg" alt="Woman jumping">
+                        </picture>
                     </div>
+                    <div class="blog-card-body py-4 px-2">
+                        <h4 class="subtitle ms-3">
+                            <i class="fas fa-user me-1"></i>
+                            Gustavo Campos
+                        </h4>
+                        <h3 class="card-title my-3">
+                            7 pasos esenciales para mejorar tu calidad de vida
+                        </h3>
+                        <div class="actions d-flex justify-content-end">
+                            <a href="#" class="btn btn-lg complementary">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <picture>
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/productivity.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/productivity.jpg" alt="Woman jumping">
+                        </picture>
+                    </div>
+                    <div class="blog-card-body py-4 px-2">
+                        <h4 class="subtitle ms-3">
+                            <i class="fas fa-user me-1"></i>
+                            Gustavo Campos
+                        </h4>
+                        <h3 class="card-title my-3">
+                            Aumenta la productividad y rentabilidad en las organizaciones
+                        </h3>
+                        <div class="actions d-flex justify-content-end">
+                            <a href="#" class="btn btn-lg complementary">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <picture>
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/talent.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/talent.jpg" alt="Woman jumping">
+                        </picture>
+                    </div>
+                    <div class="blog-card-body py-4 px-2">
+                        <h4 class="subtitle ms-3">
+                            <i class="fas fa-user me-1"></i>
+                            Gustavo Campos
+                        </h4>
+                        <h3 class="card-title my-3">
+                            ¿Por qué las organizaciones deben priorizar la formación de su talento?
+                        </h3>
+                        <div class="actions d-flex justify-content-end">
+                            <a href="#" class="btn btn-lg complementary">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <picture>
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/program.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/program.jpg" alt="Woman jumping">
+                        </picture>
+                    </div>
+                    <div class="blog-card-body py-4 px-2">
+                        <h4 class="subtitle ms-3">
+                            <i class="fas fa-user me-1"></i>
+                            Gustavo Campos
+                        </h4>
+                        <h3 class="card-title my-3">
+                            Implementa un programa de formación empresarial en 4 pasos
+                        </h3>
+                        <div class="actions d-flex justify-content-end">
+                            <a href="#" class="btn btn-lg complementary">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+
+    <section class="form-section">
+        <h2 class="text-center mb-5">Estoy listo para atenderte</h2>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <?php
+                    echo do_shortcode('[contact-form-7 id="dc6a403" title="Formulario de contacto"]');
+                    ?>
                 </div>
             </div>
         </div>
