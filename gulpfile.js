@@ -17,6 +17,9 @@ const avif = require('gulp-avif');
 // Javascript
 const terser = require('gulp-terser-js');
 
+const browserSync = require('browser-sync').create();
+
+
 function css( done ) {
     src('src/scss/**/*.scss') // Identificar el archivo .SCSS a compilar
         .pipe(sourcemaps.init())
@@ -68,9 +71,19 @@ function javascript( done ) {
     done();
 }
 
+function serve(done) {
+    browserSync.init({
+        proxy: 'http://aliado-segotraining.test/'
+    });
+    done();
+}
+
 function dev( done ) {
     watch('src/scss/**/*.scss', css);
     watch('src/js/**/*.js', javascript);
+    watch('./*.html').on('change', browserSync.reload);
+    watch('./dist/css/app.css').on('change', browserSync.reload);
+    watch('./*.php').on('change', browserSync.reload);
     done();
 }
 
@@ -78,14 +91,17 @@ function tarea (done) {
     console.log('Desde la primera tarea');
     done();
 }
+
+
  
-exports.tarea = tarea;
+
 
 exports.css = css;
 exports.js = javascript;
+exports.serve = serve;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 
 // imagenes, versionWebp, versionAvif, javascript,
-exports.dev = parallel(dev, imagenes, versionWebp) ;
+exports.dev = parallel(dev, imagenes, versionWebp, serve) ;

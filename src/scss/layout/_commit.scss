@@ -2,38 +2,21 @@
 
 
 .commitment {
-    height: 58rem;
+    padding: 7rem 1rem;
     background-color: #fff;
-    .com-card {
-        background-color: #f4f4f4;
-        border-radius: 2rem;
-        padding: 2.5rem;
-        display: grid;
-        grid-template-columns: 1fr .1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 4px 4px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "img1 img2 img2"
-        "img1 img3 img3";
-        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
-        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
-        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
-        .img1 { grid-area: img1; }
-    
-        .img2 { grid-area: img2; }
-    
-        .img3 { grid-area: img3; }
-    }
     .com-content {
 
-        
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var.$green-comp
+        }
         h2 {
-            text-align: center;
+            // text-align: center;
             font-weight: 700;
-            // font-size: 3.6rem;
+            font-size: 3.6rem;
             color: var.$purple-lighten;
-            margin-bottom: 5rem;
+            margin-bottom: 1.5rem;
         }
 
         i {

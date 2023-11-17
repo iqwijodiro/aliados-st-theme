@@ -9,6 +9,7 @@
   "author": "Winder Díaz",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "cssnano": "^5.1.0",
     "fs-path": "0.0.25",
     "gulp": "^4.0.2",

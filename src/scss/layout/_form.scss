@@ -1,0 +1,44 @@
+@use '../base/variables' as var;
+
+.form-section {
+    background-color: var.$purple-lighten;
+
+    h2 {
+        color: #fff;
+    }
+
+    .wpcf7-form {
+        input:not([type="submit"]), select {
+            height: 4.5rem;
+            border-radius: 8px;
+            font-family: inherit;
+            padding: 1rem;
+            color: var.$gray-light;
+            width: 100%;
+        }
+        .btn-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input[type=submit].wpcf7-submit {
+                outline: none;
+                height: 5rem;
+                padding: 1.2rem 3.2rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: var.$purple-lighten;
+                background-color: #fff;
+                &:hover {
+                    border: 2px solid #fff;
+                    color: #fff;
+                    background-color: transparent;
+                }
+            }
+        }
+        .wpcf7-response-output {
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+}

@@ -14,22 +14,29 @@ get_header();
             <div class="overlay">
             </div>
         </div>
-        <div class="hero-wrapper">
+        <div class="hero-wrapper mt-5">
             <div class="hero-image-wrapper">
-                <div class="ring-bg">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/ring.svg" class="skip-lazy" alt="Ring decoration">
-                </div>
-                <div class="member-bg">
-                    <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/rbg-img_cutted.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/rbg-img_cutted.png" alt="Member">
-                    </picture>
+                <div class="row align-items-end">
+                    <div class="col-12 col-lg-6">
+                        <div class="ring-bg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/ring.svg" class="skip-lazy" alt="Ring decoration">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="member-bg mb-md-0 pb-5">
+                            <picture>
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/gustavo-rmbg.webp" type="image/webp">
+                                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/gustavo-rmbg.png" alt="Gustavo picture" class="mx-auto">
+                            </picture>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="hero-content p-5">
-            <h1 class="page-title">
-                Nombre del aliado
+            <h1 class="page-title mt-5">
+                Gustavo Campos
             </h1>
             <p class="mb-5">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque recusandae placeat perferendis earum aperiam!
@@ -44,9 +51,9 @@ get_header();
     </section>
 
     <!-- Member features -->
-    <section class="features d-flex justify-content-center align-items-center">
+    <section class="features d-flex justify-content-center align-items-center py-gap">
         <div class="container mx-auto d-flex justify-content-center align-items-center">
-            <div class="d-grid grid">
+            <div class="d-grid grid my-5">
 
                 <div class="row">
                     <div class="col">
@@ -116,65 +123,63 @@ get_header();
         </div>
 
     </section>
+
+
     <!-- Commitment section -->
     <section class="commitment d-flex justify-content-center align-items-center">
         <div class="container mx-auto">
-            <div class="row">
-                <div class="col">
-                    <div class="com-card">
-                        <div class="img1">
-                            <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/stairs.webp" type="image/webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/stairs.png" alt="Member">
-                            </picture>
-                        </div>
-                        <div class="img2">
-                            <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/world.webp" type="image/webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/world.png" alt="Member">
-                            </picture>
-                        </div>
-                        <div class="img3">
-                            <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/sky.webp" type="image/webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.png" alt="Member">
-                            </picture>
-                        </div>
-                    </div>
+            <div class="row justify-content-center mb-5">
+
+                <div class="col-12 col-sm-10 col-lg-4">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/sky.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.png" alt="Member">
+                    </picture>
                 </div>
-                <div class="col">
+
+                <div class="col-12 col-10 col-lg-6">
                     <div class="com-content container p-5 ms-4">
+                        <h3 class="subtitle">
+                            Mi compromiso con las
+                        </h3>
                         <h2 class="com-title mt-3">
-                            Mi compromiso
+                            Personas
                         </h2>
-                        <div class="row align-items-center">
-                            <div class="col col-2">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="col">
-                                <p class="text">
-                                    Personas: estoy comprometido con la excelencia personal, con tu bienestar y calidad de vida, por ello voy a guiarte, inspirarte y empoderarte en tu viaje hacia una vida más plena y saludable.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col col-2">
-                                <i class="far fa-building"></i>
-                            </div>
-                            <div class="col">
-                                <p class="text">
-                                    Organizaciones: estoy comprometido con la excelencia organizacional, con el aumento sostenible de la productividad, rentabilidad y crecimiento de la organización cliente, a través de un acompañamiento organizado y profesional.
-                                </p>
-                            </div>
-                        </div>
+                        <p class="text">
+                            Estoy comprometido con la excelencia personal, con tu bienestar y calidad de vida, por ello voy a guiarte, inspirarte y empoderarte en tu viaje hacia una vida más plena y saludable.
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center my-5">
+
+                <div class="col-12 col-10 col-lg-6 order-1 order-lg-0">
+                    <div class="com-content container p-5 ms-4">
+                        <h3 class="subtitle">
+                            Mi compromiso con las
+                        </h3>
+                        <h2 class="com-title mt-3">
+                            Organizaciones
+                        </h2>
+                        <p class="text">
+                            Estoy comprometido con la excelencia organizacional, con el aumento sostenible de la productividad, rentabilidad y crecimiento de la organización cliente, a través de un acompañamiento organizado y profesional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-10 col-lg-4 order-0 order-lg-1">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/sky.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.png" alt="Member">
+                    </picture>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <!-- Allies Banner -->
-    <section class="banner d-flex justify-content-center align-items-center">
+    <section class="banner d-flex justify-content-center align-items-center py-gap">
         <div class="container mx-5">
             <div class="row">
                 <div class="col text-center px-5">
@@ -199,7 +204,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="bg-card py-gap">
+                    <div class="bg-card py-gap container">
                         <h2 class="text-center mb-5">Servicios</h2>
                         <div class="services-grid px-5 mt-5">
                             <div class="service-card">
@@ -418,11 +423,11 @@ get_header();
     </section>
 
 
-    <section class="form-section">
+    <section class="form-section py-gap">
         <h2 class="text-center mb-5">Estoy listo para atenderte</h2>
         <div class="container">
             <div class="row">
-                <div>
+                <div class="col-8 mx-auto">
                     <?php
                     echo do_shortcode('[contact-form-7 id="dc6a403" title="Formulario de contacto"]');
                     ?>
@@ -432,3 +437,7 @@ get_header();
     </section>
 
 </main>
+
+<?php
+get_footer();
+?>

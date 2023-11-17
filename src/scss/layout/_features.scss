@@ -1,7 +1,8 @@
 @use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
 
 .features {
-    height: 56rem;
     background-color: var.$purple-darken;
 
     .grid {

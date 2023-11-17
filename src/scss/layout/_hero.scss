@@ -1,8 +1,6 @@
 @use '../base/variables' as var;
+@use '../base/mixins' as mix;
 
-
-.main-content {
-}
 
 .hero {
     position: relative;
@@ -37,7 +35,8 @@
         justify-content: flex-end;
         align-items: center;
         width: min(90%, 110rem);
-        height: 100vh;
+        height: 100%;
+        max-height: 100vh;
         margin: 0 auto;
         position: absolute;
         z-index: 9;
@@ -48,11 +47,24 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            .ring-bg, 
-            .member-bg {
-                flex: 1;
+            .ring-bg {
+                // flex: 1;
                 img {
-                    width: min(100%, 60rem);
+                    width: min(95%, 62rem);
+                    margin-left: 3rem;
+                }
+            }
+            .member-bg {
+                // flex: 1;
+                img {
+                    width: min(100%, 40rem);
+                    margin-left: 6rem;
+                }
+            }
+            @include mix.tablet {
+                border: 2px solid red;
+                .ring-bg {
+                    align-self: center;
                 }
             }
         }
@@ -61,12 +73,18 @@
         position: absolute;
         z-index: 11;
         color: #fff;
-        width: min(90%, 50rem);
-        left: 10%;
+        width: min(90%, 55rem);
+        left: 12%;
+        margin-top: 10rem;
         .page-title {
             font-size: 4rem;
             font-weight: 700;
             letter-spacing: .2rem;
+        }
+        @include mix.tablet {
+            border: 2px solid red;
+            top: 10%;
+            text-align: center;
         }
     }
 }
