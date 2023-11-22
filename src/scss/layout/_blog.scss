@@ -3,39 +3,42 @@
 
 .blog {
     .latest {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-
-        .blog-card-img {
-            width: min(90%, 27rem);
-            img {
-                height: 24rem;
-                object-fit: cover;
-                border-radius: 8px;
-            }
-        }
-        
-        .blog-card-body {
-            width: min(90%, 27rem);
-            height: 14rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            h4 {
-                color: var.$green-comp;
-                font-size: 1rem;
-                i{
-                    color: var.$gray-light
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+        // grid-template-rows: auto;
+        .blog-card{
+            .blog-card-img {
+                width: min(95%, 27rem);
+                margin: 0 auto;
+                img {
+                    height: 24rem;
+                    object-fit: cover;
+                    border-radius: 8px;
                 }
             }
-            h3 {
-                color: var.$gray-darken;
-                font-size: 1.5rem;
-            }
-            .actions {
-                align-self: flex-end;
+            
+            .blog-card-body {
+                margin: 0 auto;
+                width: min(90%, 27rem);
+                height: 14rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                h4 {
+                    color: var.$green-comp;
+                    font-size: 1rem;
+                    i{
+                        color: var.$gray-light
+                    }
+                }
+                h3 {
+                    color: var.$gray-darken;
+                    font-size: 1.5rem;
+                }
+                .actions {
+                    align-self: flex-end;
+                }
             }
         }
     }

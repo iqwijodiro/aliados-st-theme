@@ -48,21 +48,18 @@
             align-items: flex-end;
             justify-content: space-between;
             .ring-bg {
-                // flex: 1;
                 img {
                     width: min(95%, 62rem);
                     margin-left: 3rem;
                 }
             }
             .member-bg {
-                // flex: 1;
                 img {
                     width: min(100%, 40rem);
                     margin-left: 6rem;
                 }
             }
             @include mix.tablet {
-                border: 2px solid red;
                 .ring-bg {
                     align-self: center;
                 }
@@ -82,10 +79,18 @@
             letter-spacing: .2rem;
         }
         @include mix.tablet {
-            border: 2px solid red;
             top: 10%;
             text-align: center;
         }
+
+        @include mix.telefono {
+            left: 5%;
+            a.btn {
+                display: block;
+                margin: 1.5rem 0;
+            }
+        }
+
     }
 }
 

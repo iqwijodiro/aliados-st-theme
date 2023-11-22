@@ -6,10 +6,9 @@
     background-color: var.$purple-darken;
 
     .grid {
-        width: min(90%, 70rem);
-        gap: 5rem;
+        justify-content: center;
         .card.custom-card {
-            width: 20rem;
+            width: min(75%, 30rem);
             height: 16rem;
             display: flex;
             align-items: center;
@@ -17,6 +16,7 @@
             text-align: center;
             color: var.$purple-lighten;
             padding: 1rem;
+            margin: 1.5rem auto;
             .card-icon {
                 i {
                     color: inherit;
