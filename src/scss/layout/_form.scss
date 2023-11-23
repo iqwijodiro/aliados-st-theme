@@ -1,7 +1,8 @@
 @use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
 
 .form-section {
-    background-color: var.$purple-lighten;
 
     h2 {
         color: #fff;
@@ -33,6 +34,11 @@
                     border: 2px solid #fff;
                     color: #fff;
                     background-color: transparent;
+                }
+
+                @include mix.tablet {
+                    display: block;
+                    width: min(95%, 250px);
                 }
             }
         }

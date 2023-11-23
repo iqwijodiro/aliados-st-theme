@@ -136,7 +136,7 @@ get_header();
                 <div class="col-12 col-sm-10 col-lg-4">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/sky.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.jpg" alt="Member">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.jpg" alt="Guy looking up to sky">
                     </picture>
                 </div>
 
@@ -173,7 +173,7 @@ get_header();
                 <div class="col-12 col-sm-10 col-lg-4 order-0 order-lg-1">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/sky.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.jpg" alt="Member">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/sky.jpg" alt="Same guy looking at the sky">
                     </picture>
                 </div>
             </div>
@@ -185,13 +185,13 @@ get_header();
     <section class="banner d-flex justify-content-center align-items-center py-gap">
         <div class="container mx-5">
             <div class="row align-items-center">
-                <div class="col text-center px-5">
+                <div class="col-12 col-md-6 text-center px-5 order-1 order-md-0">
                     <h3 class="banner-title mb-5">
                         Soy un aliado estrategico de SEGO Training para Costa Rica y Centro América
                     </h3>
                     <a href="#" class="btn myBtn primary">Conoce más</a>
                 </div>
-                <div class="col px-5">
+                <div class="col-12 col-md-6 px-5 order-0 order-md-1">
                     <div class="logo-brand-wrapper p-5">
                         <picture>
                             <source srcset="<?php echo get_template_directory_uri(); ?>/dist/img/logo-new.webp" type="image/webp">
@@ -435,7 +435,7 @@ get_header();
     </section>
 
 
-    <section class="form-section py-gap" id="contact">
+    <section class="form-section bg-purple py-gap" id="contact">
         <h2 class="text-center mb-5">Estoy listo para atenderte</h2>
         <div class="container">
             <div class="row">

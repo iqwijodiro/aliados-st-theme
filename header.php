@@ -16,16 +16,16 @@
                 <div class="d-flex justify-content-between container">
                     <div>
                         <i class="fas fa-map-marked-alt me-1"></i>
-                        <a href="#">País de Ubicación</a>
+                        <a href="https://maps.app.goo.gl/ASnWGKG111eNZXhn8">País de Ubicación</a>
                     </div>
                     <div class="d-flex">
                         <div class="me-4">
                             <i class="fab fa-linkedin me-1"></i>
-                            <a href="#">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/gustavo-adolfo-campos-tabares-589851112/">LinkedIn</a>
                         </div>
                         <div>
                             <i class="fab fa-facebook me-1"></i>
-                            <a href="#">Facebook</a>
+                            <a href="https://www.facebook.com/gustavo.campostabares">Facebook</a>
                         </div>
                     </div>
                 </div>
@@ -37,8 +37,8 @@
                     <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                         <i class="fas fa-bars"></i>
                     </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                        <div class="offcanvas-header bg-blue justify-content-start">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" data-bs-scroll="true" data-bs-backdrop="false">
+                        <div class="offcanvas-header justify-content-start">
                             <button type="button" class="bg-transparent border-0 text-white" data-bs-dismiss="offcanvas" aria-label="Close">
                                 <i class="fas fa-times"></i>
                             </button>
@@ -50,13 +50,13 @@
                                     <a class="nav-link active" href="#hero">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#acerca">Conóceme</a>
+                                    <a class="nav-link" href="#conoceme">Conóceme</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#servicios">Servicios</a>
+                                    <a class="nav-link" href="#services">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                    <a class="nav-link" href="#contact">Contacto</a>
                                 </li>
                             </ul>
                         </div>
