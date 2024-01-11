@@ -3,17 +3,17 @@
 
 .blog {
     .latest {
-        // display: grid;
-        // grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
-        // grid-template-rows: auto;
+        width: min(100%, 100rem);
         .blog-card{
+            width: min(100%, 33rem);
+            
             .blog-card-img {
-                width: min(95%, 27rem);
+                width: min(95%, 32rem);
                 margin: 0 auto;
                 img {
-                    height: 24rem;
                     object-fit: cover;
                     border-radius: 8px;
+                    aspect-ratio: 16 / 9;
                 }
             }
             
@@ -34,7 +34,7 @@
                 }
                 h3 {
                     color: var.$gray-darken;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                 }
                 .actions {
                     align-self: flex-end;

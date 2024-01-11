@@ -87,15 +87,6 @@ function dev( done ) {
     done();
 }
 
-function tarea (done) {
-    console.log('Desde la primera tarea');
-    done();
-}
-
-
- 
-
-
 exports.css = css;
 exports.js = javascript;
 exports.serve = serve;
@@ -104,4 +95,4 @@ exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 
 // imagenes, versionWebp, versionAvif, javascript,
-exports.dev = parallel(dev, imagenes, versionWebp, serve) ;
+exports.dev = parallel(dev, imagenes, versionWebp, versionWebp, serve, javascript) ;

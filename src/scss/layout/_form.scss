@@ -30,10 +30,13 @@
                 font-weight: 600;
                 color: var.$purple-lighten;
                 background-color: #fff;
+                margin-left: 5rem;
                 &:hover {
                     border: 2px solid #fff;
                     color: #fff;
                     background-color: transparent;
+                }
+                p {
                 }
 
                 @include mix.tablet {

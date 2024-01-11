@@ -20,22 +20,33 @@
     }
     
     
-    .navbar__navigation ul li {
-        margin-right: 3.5rem;
-        font-size: 1.6rem;
-    }
-    .nav-link, .nav-item {
-        color: #fff;
-        &.active {
-            color: #fff !important;
-            font-weight:400;
-            border-bottom: 2px solid #fff;
-        }
+    .navbar-nav {
+        ul {
+            // border: 2px solid red;
+            li.menu-item {
+                margin-right: 3.5rem;
+                font-size: 1.6rem;
+                color: #fff;
+                position: relative;
+            } 
+            li.menu-item::before {
+                content: '';
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #fff;
+                position: absolute;
+                bottom: -0.25rem;
+                left: 50%;
+                transition: width .4s, left .4s;
+            }
 
-        &:hover {
-            color: #d9d9d9;
+            li.menu-item:hover::before {
+                width: 100%;
+                left: 0;
+            }
         }
-    }
+    } 
     
     
     .nav-sticky.navbar-custom {

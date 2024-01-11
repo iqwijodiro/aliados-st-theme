@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     .image-bg {
+        height: 80vh;
+        overflow: hidden;
         .overlay {
             position: absolute;
             top: 0;
@@ -36,7 +38,7 @@
         align-items: center;
         width: min(90%, 110rem);
         height: 100%;
-        max-height: 100vh;
+        max-height: 80vh;
         margin: 0 auto;
         position: absolute;
         z-index: 9;
@@ -55,7 +57,8 @@
             }
             .member-bg {
                 img {
-                    width: min(100%, 40rem);
+                    width: min(100%, 50rem);
+                    margin-top: 2rem;
                     margin-left: 6rem;
                 }
             }
@@ -72,11 +75,14 @@
         color: #fff;
         width: min(90%, 55rem);
         left: 12%;
-        margin-top: 10rem;
         .page-title {
             font-size: 4rem;
             font-weight: 700;
             letter-spacing: .2rem;
+        }
+
+        p {
+            font-size: 1.8rem;
         }
         @include mix.tablet {
             top: 10%;

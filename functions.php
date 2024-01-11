@@ -12,7 +12,8 @@
 
     function st_aliados_menus() {
         register_nav_menus( array(
-            'main-menu' => __('Menu Principal', 'st-aliados-site')
+            'main-menu' => __('Menu Principal', 'st-aliados-site'),
+            'social-menu' => __('Menu de redes', 'st-aliados-site')
         ) );
     }
     add_action('init', 'st_aliados_menus');

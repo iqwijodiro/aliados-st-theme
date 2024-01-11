@@ -13,12 +13,12 @@
 
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark flex-column">
             <div class="container-fluid top-navbar">
-                <div class="d-flex justify-content-between container">
-                    <div>
-                        <i class="fas fa-map-marked-alt me-1"></i>
-                        <a href="https://maps.app.goo.gl/ASnWGKG111eNZXhn8">País de Ubicación</a>
-                    </div>
-                    <div class="d-flex">
+                <ul class="d-flex justify-content-between container mt-2">
+                    <li>
+                        <i class="fab fa-whatsapp me-1"></i>
+                        <a href="https://wa.me/+50670176705">Contactame</a>
+                    </li>
+                    <li class="d-flex">
                         <div class="me-4">
                             <i class="fab fa-linkedin me-1"></i>
                             <a href="https://www.linkedin.com/in/gustavo-adolfo-campos-tabares-589851112/">LinkedIn</a>
@@ -27,8 +27,8 @@
                             <i class="fab fa-facebook me-1"></i>
                             <a href="https://www.facebook.com/gustavo.campostabares">Facebook</a>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
             </div>
 
@@ -45,39 +45,33 @@
 
                         </div>
                         <div class="offcanvas-body bg-blue">
-                            <ul class="d-flex ps-3 m-0 navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#hero">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#conoceme">Conóceme</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services">Servicios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contacto</a>
-                                </li>
-                            </ul>
+                            
+                            <?php
+                            $args = array(
+                                'theme_location' => 'main-menu',
+                                'container' => 'ul',
+                                'container_class' => 'd-flex'
+                            );
+
+                            wp_nav_menu($args);
+                            ?>
                         </div>
                     </div>
                 </div>
 
                 <div class="navbar__navigation collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
-                    <ul class="d-flex navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#hero">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#conoceme">Conóceme</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacto</a>
-                        </li>
-                    </ul>
+                    <?php
+                    $args = array(
+                        'theme_location' => 'main-menu',
+                        'container' => 'nav',
+                        'container_class' => 'navbar-nav',
+                        'menu_class' => 'mt-2',
+                        'items_wrap' => '<ul class="d-flex mt-2">%3$s</ul>'
+                    );
+
+                    wp_nav_menu($args);
+                    ?>
+                    
                 </div>
 
             </div>

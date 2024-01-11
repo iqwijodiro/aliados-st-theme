@@ -2,21 +2,21 @@
 @use '../base/mixins' as mix;
 
 .services {
-    // height: 105rem;
     background: rgb(33,1,59);
     background: linear-gradient(180deg, rgba(33,1,59,1) 0%, rgba(33,1,59,0.9) 33%, rgba(33,1,59,0.55) 67%, rgba(33,1,59,0) 100%);
     .bg-card {
         background-color: #fff;
         box-shadow: 5px 10px 7px 3px rgba(0,0,0,0.25);
         border-radius: 1.6rem;
-        // width: min(95%, 125rem);
+
+        h2 {
+            margin: 2.5rem 0 3rem 0;
+        }
     }
     .services-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-        grid-template-rows: 1fr;
         gap: 30px;
-        grid-auto-flow: row;
 
         .service-card {
             display: flex;
@@ -25,7 +25,7 @@
             align-items: center;
             .card-img {
                 position: relative;
-                width: min(90%, 30rem);
+                width: min(95%, 32rem);
                 img {
                     height: 240px;
                     object-fit: cover;
@@ -33,7 +33,7 @@
             }
             .card-body {
                 background-color: #fff;
-                width: min(90%, 27rem);
+                width: min(100%, 30rem);
                 z-index: 20;
                 margin-top: -65px;
                 box-shadow: 5px 7px 10px 5px rgba(169, 169, 169, 0.30);
@@ -42,12 +42,14 @@
                     font-size: 1rem;
                 }
                 .card-title {
-                    font-size: 1.6rem;
+                    font-size: 2.3rem;
                     color: var.$purple-lighten;
+                    font-weight: 600;
                 }
                 .card-text {
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     color: var.$gray-light;
+                    font-weight: 300;
                 }
             }
             img, .card-body {

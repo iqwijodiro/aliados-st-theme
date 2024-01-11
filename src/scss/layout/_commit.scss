@@ -5,24 +5,44 @@
     // padding: 7rem 1rem;
     background-color: #fff;
     .com-content {
+        p.text {
+            font-size: 2rem;
+        }
 
         h3 {
             font-size: 1.4rem;
             font-weight: 600;
             color: var.$green-comp
         }
-        h2 {
-            // text-align: center;
+        h2.com-title {
+            text-align: center;
             font-weight: 700;
             font-size: 3.6rem;
             color: var.$purple-lighten;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+        h2.com-subtitle {
+            font-size: 3rem;
+            color: var.$purple-lighten;
+            margin-bottom: 1.2rem;
         }
 
-        i {
-            color: var.$purple-lighten;
-            font-size: 4rem;
+        .sign {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+            hr {
+                width: 200px;
+                height: 2px;
+                color: var.$gray-darken;
+            }
         }
+
     }
 
 

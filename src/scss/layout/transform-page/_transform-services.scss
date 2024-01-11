@@ -1,0 +1,13 @@
+@use '../../base/variables' as var;
+
+
+.transform-services {
+    margin: 0;
+    padding: 0;
+    .text.service-msg {
+        color: var.$purple-lighten;
+        font-size: 2.2rem;
+        padding: 1rem 2rem;
+    }
+
+}
