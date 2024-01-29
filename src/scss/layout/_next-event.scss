@@ -1,22 +1,29 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
+
+.next-event-banner.transform {
+    padding: 7% 0 0;
+}
 .next-event-banner {
     background-color: var.$purple-lighten;
     padding: 25rem 0 10rem;
+    @include mix.tablet {
+        padding: 20rem 0 2rem;
+    }
     h3 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     h2.event-caption {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
      * {
          color: #fff;
     }
     ul {
-        line-height: 1.8;
+        line-height: 1.6;
         li {
-            margin-top: 1rem;
+            margin-top: .75rem;
         }
     }
     .event-title {
@@ -25,12 +32,12 @@
     }
 
     .text-wrapper {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .row-list {
         ul {
             li {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
         }
     }

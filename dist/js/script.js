@@ -1,20 +1,2 @@
-
-function windowScroll() {
-    const navbar = document.querySelector('#navbar');
-   
-    if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
-    ) {
-
-        navbar.classList.add('nav-sticky');
-    } else {
-        navbar.classList.remove('nav-sticky');
-    }
-    
-}
-
-window.addEventListener('scroll', (ev) => {
-    ev.preventDefault();
-    windowScroll()
-})
+function windowScroll(){const e=document.querySelector("#navbar");document.body.scrollTop>=50||document.documentElement.scrollTop>=50?e.classList.add("nav-sticky"):e.classList.remove("nav-sticky")}window.addEventListener("scroll",e=>{e.preventDefault(),windowScroll()});const days=document.getElementById("days"),hours=document.getElementById("hours"),minutes=document.getElementById("minutes"),seconds=document.getElementById("seconds"),countdown=document.getElementById("countdown"),year=document.getElementById("year"),loading=document.getElementById("loading"),currentYear=(new Date).getFullYear(),newYearTime=new Date(`March 01 ${currentYear} 00:00:00`);year.innerText=currentYear+1;const updateCountdown=()=>{const e=new Date,n=newYearTime-e,t=Math.floor(n/1e3/60/60/24),o=Math.floor(n/1e3/60/60)%24,d=Math.floor(n/1e3/60)%60,r=Math.floor(n/1e3)%60;days.innerHTML=t,hours.innerHTML=o<10?"0"+o:o,minutes.innerHTML=d<10?"0"+d:d,seconds.innerHTML=r<10?"0"+r:r};setInterval(updateCountdown,300);const days_2=document.getElementById("days_2"),hours_2=document.getElementById("hours_2"),minutes_2=document.getElementById("minutes_2"),seconds_2=document.getElementById("seconds_2"),countdown_2=document.getElementById("countdown_2"),year_2=document.getElementById("year_2"),loading_2=document.getElementById("loading_2"),currentYear_2=(new Date).getFullYear(),newYearTime_2=new Date(`Aug 01 ${currentYear} 00:00:00`);year_2.innerText=currentYear_2+1;const updateCountdown2=()=>{const e=new Date,n=newYearTime_2-e,t=Math.floor(n/1e3/60/60/24),o=Math.floor(n/1e3/60/60)%24,d=Math.floor(n/1e3/60)%60,r=Math.floor(n/1e3)%60;days_2.innerHTML=t,hours_2.innerHTML=o<10?"0"+o:o,minutes_2.innerHTML=d<10?"0"+d:d,seconds_2.innerHTML=r<10?"0"+r:r};setInterval(updateCountdown2,300);
+//# sourceMappingURL=script.js.map

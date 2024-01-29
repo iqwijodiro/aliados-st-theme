@@ -1,0 +1,44 @@
+@use '../../base/variables' as var;
+
+
+
+.transform-products {
+    // background-color: #f2f2f2;
+    .benefits-wrapper {
+        li {
+            margin-bottom: 1rem;
+        }
+        
+    }
+    .benefits.text {
+        border-radius: 30%;
+        background-color: rgba($color: var.$green-comp, $alpha: .4);
+        font-size: 1.5rem; 
+        line-height: 1.85rem; /* 20px */
+        padding: .4rem 1rem; /* 8px*/
+        margin: 1rem; /* 8px*/
+        // cursor: none;
+        border: none;
+        border-radius: 0.375rem; /* 6px */
+        outline: none;
+        color: #fff;
+        text-align: center;
+        display: inline;
+    }
+    .text-wrapper {
+        text-align: center;
+        .text {
+            font-weight: 600;
+            color: var.$purple-lighten;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+    }
+    .seminary {
+        ul.text {
+            li {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}

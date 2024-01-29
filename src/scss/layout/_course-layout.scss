@@ -1,0 +1,13 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+.wave.learning {
+    // max-height: 15dvh;
+    
+}
+.benefits.learning-page {
+    margin: -12rem 0 0;
+    @include mix.tablet {
+        margin: 0;
+    }
+}

@@ -62,7 +62,6 @@ get_header();
         </div>
     </section>
 
-
     <section class="hero" id="hero">
         <!-- Hero y Background -->
         <div class="image-bg">
@@ -101,8 +100,7 @@ get_header();
                 Mi propósito:
             </h3>
             <p class="mb-5">
-                Educar y acompañar a personas para que alcancen plenitud y calidad de vida.
-                Mejorar la productividad de las organizaciones.
+                Educar y acompañar a personas para que descubran su propósito y mejoren bienestar y calidad de vida.
             </p>
             <a href="#" class="btn myBtn primary m-0 me-md-5">Conóceme</a>
             <!-- <a href="#" class="btn myBtn secondary">
@@ -272,7 +270,7 @@ get_header();
                                 </div>
                                 <div class="card-body p-4">
                                     <h4 class="subtitle">
-                                        Seminario
+                                        Cursos y Seminarios
                                     </h4>
                                     <h3 class="card-title">
                                         Transforma tu vida
@@ -295,10 +293,10 @@ get_header();
                                 </div>
                                 <div class="card-body p-4">
                                     <h4 class="subtitle">
-                                        Mentoreo
+                                        Cursos y Seminarios
                                     </h4>
                                     <h3 class="card-title">
-                                        Transforma tu organización
+                                        Aprende a vivir
                                     </h3>
                                     <p class="card-text">
                                         Recibirás a través de cursos y seminarios en vivo orientación experta y estratégica para aumentar sosteniblemente la productividad, rentabilidad y crecimiento de la organización a la que representas (emprendimientos u organizaciones en general)
@@ -318,10 +316,10 @@ get_header();
                                 </div>
                                 <div class="card-body p-4">
                                     <h4 class="subtitle">
-                                        Mentoreo
+                                        Coaching & Mentoring
                                     </h4>
                                     <h3 class="card-title">
-                                        Tu mentor corporativo
+                                        Recibe coaching
                                     </h3>
                                     <p class="card-text">
                                         Recibirás a través de cursos y seminarios en vivo orientación experta y estratégica para aumentar sosteniblemente la productividad, rentabilidad y crecimiento de la organización a la que representas (emprendimientos u organizaciones en general).

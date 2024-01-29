@@ -66,7 +66,7 @@ function javascript( done ) {
         .pipe(sourcemaps.init())
         .pipe( terser() )
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('build/js'));
+        .pipe(dest('dist/js'));
 
     done();
 }

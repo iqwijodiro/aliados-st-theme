@@ -66,7 +66,7 @@
                         'container' => 'nav',
                         'container_class' => 'navbar-nav',
                         'menu_class' => 'mt-2',
-                        'items_wrap' => '<ul class="d-flex mt-2">%3$s</ul>'
+                        'items_wrap' => '<ul class="d-flex">%3$s</ul>'
                     );
 
                     wp_nav_menu($args);

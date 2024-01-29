@@ -1,4 +1,6 @@
 @use 'variables' as var;
+@use '../base/mixins' as mix;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -167,18 +169,63 @@ button {
     color: var.$gray-light;
 }
 
+.font-purple {
+    color: var.$purple-lighten;
+}
+
 .bg-purple {
     background-color: var.$purple-lighten;
 }
 
 
+input:not([type="submit"]), select {
+    height: 4.5rem;
+    border-radius: 8px;
+    font-family: inherit;
+    padding: 1rem;
+    color: var.$gray-light;
+    width: 100%;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit].wpcf7-submit {
+    outline: none;
+    height: 5rem;
+    padding: 1.2rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var.$purple-lighten;
+    background-color: #fff;
+    margin-left: 5rem;
+    &:hover {
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+    }
+    @include mix.tablet {
+        display: block;
+        width: min(95%, 250px);
+    }
+}
+.wpcf7-response-output {
+        border-color: #fff;
+        color: #fff;
+    }
+
+.text-lg {
+    font-size: 2rem !important;
+}
 
 
 
-
-
-
-
+.rounded-xl {
+    border-radius: 3rem;
+}
 
 
 
